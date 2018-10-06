@@ -145,15 +145,6 @@ $font-weight: 400;
 
   h4 {
     font-size: 1em;
-    font-weight: inherit;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  p {
-    margin: 0;
   }
 
   p {
@@ -161,19 +152,31 @@ $font-weight: 400;
     orphans: 3;
   }
 
-  p + * {
+  p + *,
+  ul + *,
+  ol + * {
     margin-top: pow($ratio, 1) * 1em;
     padding-top: size(2, 0.5);
   }
 
-  * + p {
+  * + p,
+  * + ul,
+  * + ol {
     margin-top: pow($ratio, -1) * 1em;
   }
 
   h1 + p,
   h2 + p,
   h3 + p,
-  h4 + p {
+  h4 + p,
+  h1 + ul,
+  h2 + ul,
+  h3 + ul,
+  h4 + ul,
+  h1 + ol,
+  h2 + ol,
+  h3 + ol,
+  h4 + ol, {
     margin-top: pow($ratio, -2) * 1em;
   }
 
@@ -255,7 +258,9 @@ $font-weight: 400;
       padding: size(2, 0.5) size(1, 1.5);
     }
 
-    p + * {
+    p + *,
+    ul + *,
+    ol + * {
       padding-top: size(2, 0.5);
     }
 
@@ -284,7 +289,9 @@ $font-weight: 400;
       padding: size(2, 0.5) size(1, 0.5);
     }
 
-    p + * {
+    p + *,
+    ol + *,
+    ul + * {
       padding-top: size(2, 0.5);
     }
 
@@ -311,7 +318,9 @@ $font-weight: 400;
       padding: size(2, 0.5) size(2, 0.5);
     }
 
-    p + * {
+    p + *,
+    ul + *,
+    ol + * {
       padding-top: size(2, 0.5);
     }
 
