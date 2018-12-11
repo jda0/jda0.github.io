@@ -9,7 +9,7 @@
     type: organization
     title: MVSE-Outreach
     url: mvse-outreach
-  lastcommit: 7/18
+  lastcommit: 10/18
 
 - title: Hedgehog Bot
   url: mvse-outreach/arduino-hedgehog-bot
@@ -31,7 +31,40 @@
     type: git-merge
     title: MVSE-Outreach
     url: mvse-outreach/arduino-hedgehog-bot
-  lastcommit: 3/18
+  lastcommit: 10/18
+  
+- title: Themes
+  url: hundredrabbits/themes
+  lang: js
+  desc: WCAG2 evaluation for the Hundred Rabbits theme ecosystem
+  svg: themes-mark
+  tag:
+    type: git-merge
+    title: hundredrabbits/themes
+    url: hundredrabbits/themes
+  lastcommit: 9/18
+  
+- title: Yu-Scan Be App
+  url: gl!yuscan
+  lang: js
+  desc: React Native App for Yu-Scan Be
+  svg: yuscan-mark
+  tag:
+    type: organization
+    title: Yu-Scan Labs
+    url: gl!yuscan
+  lastcommit: 9/18
+  
+- title: Yu-Scan Be Firmware
+  url: gl!yuscan
+  lang: cpp
+  desc: BLE Firmware for Yu-Scan Be
+  svg: yuscan-mark
+  tag:
+    type: organization
+    title: Yu-Scan Labs
+    url: gl!yuscan
+  lastcommit: 9/18
 
 - title: Donsol
   url: hundredrabbits/donsol

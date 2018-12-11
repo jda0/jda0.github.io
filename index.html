@@ -218,7 +218,7 @@
               </a>
               {% if repo.tag %}
               <div class="card-tags">
-                <a href="https://github.com/{{repo.tag.url}}" title="{{site.data.maps.long.tags[repo.tag.type]}} {{repo.tag.title}}">
+                <a href="{% if repo.tag.url contains 'gl!' %}https://gitlab.com/{{ repo.tag.url | remove_first: 'gl!' }}{% else %}https://github.com/{{repo.tag.url}}{% endif %}" title="{{site.data.maps.long.tags[repo.tag.type]}} {{repo.tag.title}}">
                   <svg class="octicon octicon-{{repo.tag.type}}" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
                     {% case repo.tag.type %}
                       {% when 'organization' %}
